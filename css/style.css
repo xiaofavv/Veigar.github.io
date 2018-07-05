@@ -1767,14 +1767,13 @@ a {
     opacity: 0;
     background: #000;
     z-index: 9;
-    transition: visibility 0 linear .4s, opacity .4s cubic-bezier(.4, 0, .2, 1);
+    transition: visibility 0 linear .4s, opacity 0 cubic-bezier(.4, 0, .2, 1) .4s;
     -webkit-transform: translateZ(0);
     transform: translateZ(0)
 }
 .sidebar-overlay.active {
     opacity: .5;
     visibility: visible;
-    transition-delay: 0
 }
 .top-bar {
     height: 25px
@@ -2600,7 +2599,6 @@ a {
     border-radius: 100%;
     -moz-transform: scale(0);
     -ms-transform: scale(0);
-    webkit-transform: scale(0);
     -webkit-transform: scale(0);
             transform: scale(0)
 }
@@ -2613,7 +2611,6 @@ a {
         opacity: 0;
         -moz-transform: scale(5);
         -ms-transform: scale(5);
-        webkit-transform: scale(5);
         -webkit-transform: scale(5);
                 transform: scale(5)
     }
@@ -2623,9 +2620,8 @@ a {
         opacity: 0;
         -moz-transform: scale(5);
         -ms-transform: scale(5);
-        webkit-transform: scale(5);
         -webkit-transform: scale(5);
-                transform: scale(5)
+        transform: scale(5)
     }
 }
 
@@ -2633,7 +2629,7 @@ a {
 /*****************/
 /* Nprogress_CSS */
 /*****************/
- -#nprogress {
+ #nprogress {
     pointer-events: none
 }
 #nprogress .bar {
